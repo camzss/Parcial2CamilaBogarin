@@ -1,0 +1,7 @@
+{
+  "name": "parcial2camilabogarin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
