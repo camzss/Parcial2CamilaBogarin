@@ -24,3 +24,174 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.content {
+    background-color: #b1adad;
+  }
+
+ion-title.title-large {
+    color: #69131a;
+    font-size: 35px;
+  }
+  
+  ion-title {
+    --color: #ffffff;
+    font-family: 'Segoe Print';
+    text-align: center;
+    font-size: 27px;
+  }
+  
+  ion-toolbar {
+    --background: #69131a;
+  }
+
+  ion-searchbar.custom {
+    --background: #ffffff;
+    --color: #69131a;
+    --placeholder-color: #ffffff;
+    --icon-color: #69131a;
+    --clear-button-color: #69131a;
+    --border-radius: 3px;
+  }
+  
+  ion-searchbar.ios.custom {
+    --cancel-button-color: #69131a;
+  }
+  
+  ion-searchbar.md.custom {
+    --cancel-button-color: #69131a;
+  }
+
+.custom-card {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  border-color: #69131a;
+}
+
+.card-content {
+  display: flex;
+}
+
+.card-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.card-text {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.card-text ion-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text ion-card-title {
+  --color: #0e0e0e;
+  font-family: 'Bahnschrift SemiBold';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text ion-card-subtitle {
+  --color: #312e2ee1;
+  font-size: 13px;
+  font-family: 'Bahnschrift SemiBold';
+}
+
+
+.precio {
+    font-size: 40px;
+    --color: #1b1a1a;
+    font-family: 'Bahnschrift SemiBold';
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .custom-button {
+    --color: #69131a;
+  }
+
+  .clicked {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
+  .custom-card-tab2 {
+    display: block;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .custom-card-tab2 ion-card-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .custom-card-tab2 ion-card-title {
+    --color: #0e0e0e;
+    font-family: 'Bahnschrift SemiBold';
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .custom-card-tab2 ion-card-subtitle {
+    font-size: 0.875rem;
+    color: #000000;
+  }
+  
+  .custom-card-tab2 ion-card-content {
+    margin-top: 0.5rem;
+  }
+
+  .custom-button-tab2 ion-button {
+    --background: #69131a;
+    --background-hover: #69131a;
+    --background-activated: #69131a;
+    --background-focused: #69131a;
+  
+    --color: rgb(255, 255, 255);
+  
+    --border-radius: 0;
+    --border-color: #000;
+    --border-style: solid;
+    --border-width: 1px;
+  
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+    --ripple-color: rgb(255, 255, 255);
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+
+  .corner-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+  }
+
+  .card-subtitle {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  
+  
+  
+  
+  
+  
+  

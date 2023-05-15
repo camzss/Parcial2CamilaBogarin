@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      ClasiApp <ion-icon name="pricetags" size="small"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let item of busquedaResponse" class="custom-card-tab2">
+      <ion-card-header><ion-card-title>{{item.Titulo}}</ion-card-title></ion-card-header>
+      <img src="https://www.hostcatedral.com/api/publicacion/{{item.img}}" />
+        <div id="ion-card-subtitle">
+          <ion-card-subtitle class="card-subtitle">{{item.Contenido}}</ion-card-subtitle>
+        </div>
+          <ion-button class="custom-button-tab2 corner-button">{{item.Estado}}</ion-button>
+          <ion-card-subtitle class="precio">G {{item.Precio}}</ion-card-subtitle>
+  </ion-card>
+
+</ion-content>

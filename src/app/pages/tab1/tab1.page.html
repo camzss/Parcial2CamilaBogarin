@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ClasiApp <ion-icon name="pricetags" size="small"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-searchbar showCancelButton="never" class="custom" [(ngModel)]="searchText" showCancelButton="never" class="custom" (ionInput)="buscar()"></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  
+
+  <ion-card *ngFor="let item of busquedaResponse" class="custom-card" (click)="irATab2()" >
+    <div class="card-content">
+      <img src="https://www.hostcatedral.com/api/publicacion/{{item.img}}"/>
+      <div class="card-text">
+        <ion-card-header>
+          <ion-card-title>{{item.Titulo}}</ion-card-title>
+          <ion-card-subtitle>{{item.Contenido}}</ion-card-subtitle>
+          <ion-card-subtitle class="precio" color="light">G {{item.Precio}}</ion-card-subtitle>
+        </ion-card-header>
+      </div>
+    </div>
+  </ion-card>
+   
+  </ion-content>
+
